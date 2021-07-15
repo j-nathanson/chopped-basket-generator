@@ -16,8 +16,8 @@
 
 ## Technologies Used
 
--Javascript
+- Javascript
 
 ## Room for Improvement
 
--This project needs HTML and CSS files for further usability of the project.
+- This project needs HTML and CSS files for further usability of the project.
