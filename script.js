@@ -3,7 +3,7 @@ const randomOutOfTen = () => {
   return Math.floor(Math.random() * 10);
 };
 
-//creates an object containing key-value pairs for each type of ingredient
+// creates an object containing key-value pairs for each type of ingredient
 const basketIngredients = {
   proteins: [
     "a whole suckling pig",
@@ -62,8 +62,15 @@ const basketGenerator = () => {
     basketIngredients.proteins[randomOutOfTen()]
   }, ${basketIngredients.carbs[randomOutOfTen()]}, ${
     basketIngredients.vegetables[randomOutOfTen()]
-  } , and finally ${
+  }, and finally ${
     basketIngredients.random[randomOutOfTen()]
   }. 30 minutes on the clock... Clock starts now!`;
 };
 
+// stores the basket ingredients message in a local variable and then prints it to the console.
+const printBasket = () => {
+  let basketChallenge = basketGenerator();
+  console.log(basketChallenge);
+};
+
+printBasket();
