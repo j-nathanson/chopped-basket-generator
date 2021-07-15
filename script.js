@@ -3,6 +3,7 @@ const randomOutOfTen = () => {
   return Math.floor(Math.random() * 10);
 };
 
+//creates an object containing key-value pairs for each type of ingredient
 const basketIngredients = {
   proteins: [
     "a whole suckling pig",
@@ -54,3 +55,15 @@ const basketIngredients = {
     "dried plums",
   ],
 };
+
+//generates a basket ingredient message using our object and random number function
+const basketGenerator = () => {
+  return `Your entrée basket will consist of: ${
+    basketIngredients.proteins[randomOutOfTen()]
+  }, ${basketIngredients.carbs[randomOutOfTen()]}, ${
+    basketIngredients.vegetables[randomOutOfTen()]
+  } , and finally ${
+    basketIngredients.random[randomOutOfTen()]
+  }. 30 minutes on the clock... Clock starts now!`;
+};
+
